@@ -356,8 +356,10 @@ if (isSmallScreen()) {
   locomotiveAnimation();
   sheryAnimation();
   flagAnimation()
+  footerAnimation()}
+  else{
+    console.log("small")
   }
-  //test
   page4Animation()
 
 
