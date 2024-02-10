@@ -333,10 +333,14 @@ footerText.addEventListener("mouseleave",function(){
         stagger:0.05
     })
 })
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
   loadingAnimation();
+  if(!isMobileDevice){
   cursorAnimation();
   locomotiveAnimation();
   sheryAnimation();
   flagAnimation()
   footerAnimation()
-  page4Animation()
+  page4Animation()}
