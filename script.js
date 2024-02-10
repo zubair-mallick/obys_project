@@ -347,7 +347,8 @@ if (isSmallScreen()) {
 
 
   loadingAnimation();
-
+  footerAnimation()
+  cursorAnimation();
   if(!isSmallScreen()){
     console.log("laptop")
   
@@ -355,10 +356,8 @@ if (isSmallScreen()) {
   locomotiveAnimation();
   sheryAnimation();
   flagAnimation()
-  footerAnimation()}
-  else{
-    console.log("small")
   }
+  
   page4Animation()
 
 
