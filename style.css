@@ -119,6 +119,9 @@ body {
 
 
 #main {
+    overflow-y: scroll; /* Enable vertical scrolling */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+
     position: relative;
     background-color: #151515;
     z-index: 99;
