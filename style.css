@@ -119,8 +119,7 @@ body {
 
 
 #main {
-    overflow-y: scroll; /* Enable vertical scrolling */
-    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+
 
     position: relative;
     background-color: #151515;
@@ -675,6 +674,10 @@ body {
 
 @media (max-width:600px) {
 
+    #main{
+        overflow-y: scroll; /* Enable vertical scrolling */
+        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    }
     #loader {
         height: 100%;
         width: 100%;

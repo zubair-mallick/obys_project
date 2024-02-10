@@ -333,14 +333,33 @@ footerText.addEventListener("mouseleave",function(){
         stagger:0.05
     })
 })
-function isMobileDevice() {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+ 
+function isSmallScreen() {
+  return window.innerWidth <= 600;
 }
+
+// Example usage:
+if (isSmallScreen()) {
+  console.log("Screen size is small (<= 600px)");
+} else {
+  console.log("Screen size is large (> 600px)");
+}
+
+
   loadingAnimation();
-  if(!isMobileDevice){
+
+  if(!isSmallScreen()){
+    console.log("laptop")
+  
   cursorAnimation();
   locomotiveAnimation();
   sheryAnimation();
   flagAnimation()
-  footerAnimation()
-  page4Animation()}
+  footerAnimation()}
+  else{
+    console.log("small")
+  }
+  page4Animation()
+
+
+ 
